@@ -1,0 +1,103 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web1.css">
+    <title>Search</title>
+</head>
+<body>
+    <div class="upline">
+        <h5 class="ec">e-commerce</h5>
+        <input type="text" maxlength="50" placeholder="Search">
+        <button id="bttn">
+            <img src="searchtransparent.png" alt="" id="searchbar" width="10px", height="10px"></button>
+        <a href="search.html" class="uplink">Search</a>
+        <a href="post.html" class="uplink">Post</a>
+        <a href="signIn.html" class="uplink">Sign in</a>
+        <a href="shoppingcart.html">
+            <img src="carticon.jpg" alt="" class="scimg" id="carticon"></a>
+    </div>
+
+    <div class="footer">
+        <p id="mail">e-commerce@gmail.com</p>
+    </div>
+    <div>
+        <div>
+            <h1 style="display: block; text-align: center;
+             font-family: Arial, Helvetica, sans-serif; margin-top: 5%; margin-bottom: 5%; font-weight: bold;font-size: 500%;">e-commerce</h1>
+        </div>
+        <label for="ser" style="text-align: center;"><h2>What are you looking to buy?</h2></label>
+        <input type="text" id="ser" placeholder="Search" maxlength="50"
+         style="width: 40%; height: 10%; border: 3px solid; margin-top: 0%; margin-left: 30%;">
+        <a href="searchres.html"><button><img src="searchtransparent.png" alt="" width="15px", height="15px"></button></a>
+        <table class="filterTable" style="margin-left: 25%; margin-top: 5%;">
+            <tr style="height: 50px;">
+                <td style="width: 8%;">
+                    <div class="itematts">
+                        <div class="dropdown" >
+                            <label for="cars" class="searchLabel">Category:</label>
+                                <select name="cars" id="cars" class="dropmenu">
+                                    <option value="volvo">car</option>
+                                    <option value="saab">Book</option>
+                                    <option value="opel">Nerf</option>
+                                    <option value="audi">Vegies</option>
+                                </select>
+                          </div> 
+                    </td>
+                </td>
+                <td style="width: 8%;">
+                    <div class="dropdown" >
+                        <label for="cars" class="searchLabel">Brand:</label>
+                                <select name="cars" id="cars" class="dropmenu">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="opel">Opel</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                      </div> 
+                </td>
+                <td style="width: 24%;"> <div class="slidecontainer" style="margin-left: 20px;">
+                    <label for="myRange" class="searchLabel">Price range</label>
+                    <input type="range" min="1" max="100" value="50" class="slider" 
+                    id="myRange" oninput="rangeValue.innerText = this.value" style="width: 35%;">
+                    <p id="rangeValue" style="display: inline; font-size: small;">50</p>
+                    <p style="display: inline; font-size: small;">$</p>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 8%;">
+                    <div style="margin-top: 10px;">
+                        <label for="age" class="searchLabel">Since:</label>
+                        <input id="age" type="number" min="2000" max="2022" maxlength="4">
+                    </div>
+                </td>
+                <td style="width: 8%";>
+                    <div style="margin-top: 10px; width: 40px ;">
+                    <label for="qun" class="searchLabel" >Quantity:</label>
+                    <input type="number" id="qun" maxlength="6" placeholder="Quantity" style="display: inline;">
+                    </div>
+                </td>
+                <td style="width: 24%";>
+                    <div class="slidecontainer" style="margin-left: 20px;">
+                        <label for="myRange1" class="searchLabel">Rating</label>
+                        <input type="range" min="1" max="10" value="0" step="1" class="slider" 
+                        id="myRange1" oninput="rangeValue1.innerText = this.value">
+                        <p id="rangeValue1" style="display: inline; font-size: small;">0</p>
+                      </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td >
+                    <a href="search.html" style="text-decoration: none;"><button class="button" style="margin-left: 20%;">APPLY</button></a>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
